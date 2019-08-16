@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Prices</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
+	<script type="text/javascript" src="/js/util.js"></script>
+	<style type="text/css">
+		/*<![CDATA[*/
+		body {
+			color: #333333;
+			line-height: 150%;
+		}
+
+		thead {
+			font-weight: bold;
+			background-color: #CCCCCC;
+		}
+
+		.table tbody tr:nth-child(even) td, .table tbody tr:nth-child(even) th { background-color:#D4FFFF; }
+
+		.table tbody tr:nth-child(odd)  td, .table tbody tr:nth-child(odd)  th { background-color:#D4BFFF; }
+
+		.odd {
+			background-color: #FFCCCC;
+		}
+
+		.even {
+			background-color: #CCCCFF;
+		}
+
+		.minus {
+			color: #FF0000;
+		}
+
+		/*]]>*/
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Stock Prices</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>symbol</th>
+				<th>name</th>
+				<th>price</th>
+				<th>change</th>
+				<th>ratio</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="_list.item">
+				<td><span id="text[j][0].text">1</span></td>
+				<td><a id="link[j][0].url" href="#"><span id="link[j][0].title">ADBE</span></a></td>
+				<td><a id="stock[j].url" href="#"><span id="stock[j].name">Adobe Systems</span></a></td>
+				<td><strong><span id="stock[j].price">0.00</span></strong></td>
+				<td><span id="stock[j].change">0.00</span></td>
+				<td><span id="stock[j].ratio">0.00</span></td>
+			</tr>
+   		</tbody>
+	</table>
+
+</body>
+</html>
